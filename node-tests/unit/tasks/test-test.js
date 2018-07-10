@@ -25,7 +25,9 @@ describe('electron:test task', () => {
     expect(subject().testem).to.be.an.instanceof(require('testem'));
   });
 
-  it('sets the file in the default testem options', () => {
-    expect(subject().defaultOptions({}).file).to.equal('testem-electron.js');
+  it('sets the file in the testem options', () => {
+    // Note: testemOptions changed to defaultOptions in ember-cli v3.2.0
+    // If TestTask._super.testemOptions returns falsey we'll attempt to use defaultOptions instead.
+    expect(subject().testemOptions({}).file).to.equal('testem-electron.js');
   });
 });

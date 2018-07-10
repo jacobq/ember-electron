@@ -74,7 +74,7 @@
     "silent-error": "^1.0.1",
     "socket.io": "^1.4.8",
     "symlink-or-copy": "^1.1.8",
-    "testem": "^2.8.2",
+    "testem": "jacobq/testem#82960cd3e1b22733a24b449f6e274cadf694bca6",
     "tmp": "0.0.31",
     "tree-kill": "^1.1.0",
     "tree-sync": "^1.2.2",
